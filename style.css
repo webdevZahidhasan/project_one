@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #3F51B5;
+  background-color: #2196F3;
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
@@ -26,5 +26,43 @@ body h1 {
   color: white;
   font-weight: 600;
   text-align: center;
+  -webkit-animation: upsanddown 1000ms ease forwards;
+          animation: upsanddown 1000ms ease forwards;
+}
+
+body span {
+  color: #FFC107;
+  -webkit-animation: fromSide 1000ms ease forwards;
+          animation: fromSide 1000ms ease forwards;
+}
+
+@-webkit-keyframes upsanddown {
+  0% {
+    -webkit-transform: translateY(-5000px);
+            transform: translateY(-5000px);
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes upsanddown {
+  0% {
+    -webkit-transform: translateY(-5000px);
+            transform: translateY(-5000px);
+  }
+  50% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 /*# sourceMappingURL=style.css.map */
